@@ -22,7 +22,7 @@ export default function HeroSection() {
   height={560}
 />
               </div>
-              <div className="mx-auto mt-6 max-w-md text-center">
+              <div className="mx-auto mt-3 max-w-md text-center">
 <h1 className="text-balance font-serif text-4xl font-medium sm:text-5xl">
   Just speak. We handle the rest.
 </h1>

@@ -8,17 +8,6 @@ import { Button } from "@/components/ui/button"
 export default function HeroSection() {
   return (
     <>
-      <header className="fixed inset-x-0 top-4 z-50 mx-auto w-fit">
-        <div className="bg-foreground/5 flex items-center gap-6 rounded-full py-2 pr-2 pl-5 backdrop-blur">
-          <Logo className="h-5" />
-          <Button asChild className="pr-1.5" variant="outline" size="sm">
-            <Link href="#link">
-              <span className="text-nowrap">Get started</span>
-              <ChevronRight className="opacity-50" />
-            </Link>
-          </Button>
-        </div>
-      </header>
       <main className="overflow-hidden">
         <section className="bg-background">
           <div className="relative pt-16 pb-32">

@@ -23,13 +23,12 @@ export default function HeroSection() {
                 />
               </div>
               <div className="mx-auto mt-6 max-w-md text-center">
-                <h1 className="text-balance font-serif text-4xl font-medium sm:text-5xl">
-                  Ship faster. Integrate smarter.
-                </h1>
-                <p className="text-muted-foreground mt-4 text-balance">
-                  Veil is your all-in-one engine for adding seamless
-                  integrations to your app.
-                </p>
+<h1 className="text-balance font-serif text-4xl font-medium sm:text-5xl">
+  Just speak. We handle the rest.
+</h1>
+<p className="text-muted-foreground mt-4 text-balance">
+  Never miss an appointment - just speak and it's booked.
+</p>
 
                 <Button asChild className="mt-6 pr-1.5">
                   <Link href="#link">

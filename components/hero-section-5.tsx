@@ -30,12 +30,12 @@ export default function HeroSection() {
   Never miss an appointment - just speak and it's booked.
 </p>
 
-                <Button asChild className="mt-6 pr-1.5">
-                  <Link href="#link">
-                    <span className="text-nowrap">Start Building</span>
-                    <ChevronRight className="opacity-50" />
-                  </Link>
-                </Button>
+<Button asChild className="mt-6 pr-1.5">
+  <Link href="https://calendly.com/odiljonovbekzod86/meeting-1-1">
+    <span className="text-nowrap">Book Appointment</span>
+    <ChevronRight className="opacity-50" />
+  </Link>
+</Button>
               </div>
             </div>
           </div>

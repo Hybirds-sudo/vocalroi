@@ -22,9 +22,10 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn("antialiased", fontMono.variable, "font-sans", inter.variable)}
     >
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
-      </body>
-    </html>
+<body>
+<ThemeProvider>{children}</ThemeProvider>
+<script id="vtag-ai-js" async src="https://r2.leadsy.ai/tag.js" data-pid="VuafPjtlZG0zwZsS" data-version="062024"></script>
+</body>
+</html>
   )
 }

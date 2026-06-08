@@ -2,8 +2,15 @@
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
-import { Logo } from "@/components/logo"
 import { Button } from "@/components/ui/button"
+import LogoCloud from "@/components/logo-cloud-2"
+import Features from "@/components/features-2"
+import Content from "@/components/content-3"
+import Stats from "@/components/stats-2"
+import Team from "@/components/team-1"
+import Testimonials from "@/components/testimonials-1"
+import CallToAction from "@/components/call-to-action-3"
+import Footer from "@/components/footer-2"
 
 export default function HeroSection() {
   return (
@@ -27,7 +34,7 @@ export default function HeroSection() {
   Just speak. We handle the rest.
 </h1>
 <p className="text-muted-foreground mt-4 text-balance">
-  Never miss an appointment - just speak and it's booked.
+  Never miss an appointment - just speak and it&apos;s booked.
 </p>
 
 <Button asChild className="mt-6 pr-1.5">
@@ -40,6 +47,14 @@ export default function HeroSection() {
             </div>
           </div>
         </section>
+        <LogoCloud />
+        <Features />
+        <Content />
+        <Stats />
+        <Team />
+        <Testimonials />
+        <CallToAction />
+        <Footer />
       </main>
     </>
   )

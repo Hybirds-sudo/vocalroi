@@ -1,10 +1,19 @@
-import { Geist, Geist_Mono, Inter } from "next/font/google"
+import type { Metadata } from "next"
+import { Geist_Mono, Inter } from "next/font/google"
+import Script from "next/script"
+import { ThemeProvider } from "@wrksz/themes/next"
 
 import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
-import { cn } from "@/lib/utils";
+import { ThemeHotkey } from "@/components/theme-provider"
+import { cn } from "@/lib/utils"
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'})
+export const metadata: Metadata = {
+  title: "VocalROI | AI-Powered Customer Growth",
+  description:
+    "VocalROI helps businesses get more customers with AI and smart automation — from lead capture to follow-up and conversion.",
+}
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 
 const fontMono = Geist_Mono({
   subsets: ["latin"],
@@ -22,10 +31,24 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn("antialiased", fontMono.variable, "font-sans", inter.variable)}
     >
-<body>
-<ThemeProvider>{children}</ThemeProvider>
-<script id="vtag-ai-js" async src="https://r2.leadsy.ai/tag.js" data-pid="VuafPjtlZG0zwZsS" data-version="062024"></script>
-</body>
-</html>
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <ThemeHotkey />
+          {children}
+        </ThemeProvider>
+        <Script
+          id="vtag-ai-js"
+          src="https://r2.leadsy.ai/tag.js"
+          strategy="afterInteractive"
+          data-pid="VuafPjtlZG0zwZsS"
+          data-version="062024"
+        />
+      </body>
+    </html>
   )
 }

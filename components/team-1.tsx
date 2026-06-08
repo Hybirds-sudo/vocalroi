@@ -2,16 +2,16 @@ import Image from 'next/image'
 
 const members = [
     {
-        avatar: 'https://avatars.githubusercontent.com/u/47919550?v=4',
-        name: 'Bekzod Odiljonov',
+        avatar: 'https://ui-avatars.com/api/?name=Behzod+Odiljonov&size=240&background=171717&color=ffffff&bold=true',
+        name: 'Behzod Odiljonov',
         role: 'Founder & CEO, VocalROI',
         bio: 'Helps businesses unlock growth through AI and automation. Passionate about building systems that turn marketing spend into predictable revenue.',
     },
     {
-        avatar: 'https://avatars.githubusercontent.com/u/68236786?v=4',
-        name: 'Growth Team',
-        role: 'AI Automation Specialists',
-        bio: 'Our team designs, builds, and optimizes custom AI workflows — from voice agents and chatbots to full CRM automation pipelines.',
+        avatar: 'https://ui-avatars.com/api/?name=Yoriyev+Baxtiyor&size=240&background=171717&color=ffffff&bold=true',
+        name: 'Yoriyev Baxtiyor',
+        role: 'Co-Founder, VocalROI',
+        bio: 'Builds the AI and automation systems behind VocalROI — from voice agents and chatbots to full CRM pipelines that turn leads into customers.',
     },
 ]
 
@@ -20,8 +20,8 @@ export default function Team() {
         <section id="about" className="bg-background @container py-24">
             <div className="mx-auto max-w-2xl px-6">
                 <div className="space-y-4">
-                    <h2 className="text-balance font-serif text-4xl font-medium">The Team Behind VocalROI</h2>
-                    <p className="text-muted-foreground text-balance">We&apos;re a growth agency obsessed with one thing — helping businesses get more customers with smarter systems, not more manual work.</p>
+                    <h2 className="text-balance font-serif text-4xl font-medium">Meet Our Founders</h2>
+                    <p className="text-muted-foreground text-balance">The team behind VocalROI — helping businesses get more customers with AI and smart automation.</p>
                 </div>
                 <div className="mt-12 grid gap-12 text-sm">
                     {members.map((member, index) => (
